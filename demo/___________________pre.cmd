@@ -1,0 +1,1 @@
+fis3 release pre --verbose -cd ../pre
