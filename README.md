@@ -1,4 +1,4 @@
-# fis3-parser-html-uri
+# fis3-parser-html-replaceurl
 
 *html*文件替换静态url
 

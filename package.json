@@ -1,25 +1,24 @@
 {
   "name": "fis3-parser-html-replaceurl",
   "version": "1.0.0",
-  "description": "替换html中的多个静态资源",
+  "description": "replace html files static url",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "make test"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/shunzizhan/fis3-parser-html-replaceurl.git"
+    "url": "git+https://github.com/shunzizhan/fis3-parser-html-replaceurl.git"
   },
   "keywords": [
     "fis",
-    "fis3",
-    "plugin",
-    "html"
+    "html",
+    "url"
   ],
-  "author": "shunzizhan <shunzizhan@163.com>",
-  // "license": "MIT",
+  "author": "shunzizhan",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/shunzizhan/fis3-parser-html-replaceurl/issues"
   },
-  "homepage": "https://github.com/shunzizhan/fis3-parser-html-replaceurl"
+  "homepage": "https://github.com/shunzizhan/fis3-parser-html-replaceurl#readme"
 }
