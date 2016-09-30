@@ -5,7 +5,7 @@
 ## 安装
 
 ```bash
-npm install -g https://github.com/shunzizhan/fis3-parser-html-replaceurl.git
+npm install -g fis3-parser-html-replaceurl
 ```
 
 
