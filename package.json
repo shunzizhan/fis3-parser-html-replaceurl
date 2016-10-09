@@ -1,6 +1,6 @@
 {
   "name": "fis3-parser-html-replaceurl",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "replace html files static url",
   "main": "index.js",
   "scripts": {
@@ -13,7 +13,9 @@
   "keywords": [
     "fis",
     "html",
-    "url"
+    "url",
+    "drop comments",
+    "compression"
   ],
   "author": "shunzizhan",
   "license": "MIT",
