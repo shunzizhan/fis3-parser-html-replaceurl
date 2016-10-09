@@ -33,10 +33,10 @@ fis.media('test')
     });
 
 ```
-- **newWords** key为需要替换的字眼，value为替换后的string
-- **removeComments**是否删除注释，默认false
-- **ignoreWords**删除注释时，需要过滤的字眼，主要排除模板引擎自带的注释
-- **minifier**是否压缩，默认false
+- `newWords` key为需要替换的字眼，value为替换后的string
+- `removeComments` 是否删除注释，默认false
+- `ignoreWords` 删除注释时，需要过滤的字眼，主要排除模板引擎自带的注释
+- `minifier` 是否压缩，默认false
 ```html
 <!DOCTYPE html>
 <html class="no-js" lang="en">
