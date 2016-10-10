@@ -120,7 +120,10 @@ fis.media('pre')
     })
     .match('*.html', {
       parser: fis.plugin('html-replaceurl', {
-        newWords:domain_url.pre
+        newWords:domain_url.pre,
+        removeComments:true, //是否删除注释
+        ignoreWords:['ko'], //删除注释时，需要过滤的字眼，主要排除模板引擎自带的注释
+        minifier:true //是否压缩
       })
     });
 
