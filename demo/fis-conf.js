@@ -21,7 +21,7 @@ var domain_url = {
     "github_url":"https://pregithub.com",
     "fdc_img3_url":"http://preimg3.fdc.com.cn"
   },
-  bulid:{
+  build:{
     "csdn_url":"http://blog.csdn.net",
     "github_url":"https://github.com",
     "fdc_img3_url":"http://img3.fdc.com.cn"
