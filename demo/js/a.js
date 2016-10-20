@@ -1,3 +1,4 @@
+var jquery = require('b.js')
 var str = window.location.href.split("#")[0];
 
 str = "http://oldhouse.wh.fdc.com.cn/house";

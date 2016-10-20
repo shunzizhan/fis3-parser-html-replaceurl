@@ -10,7 +10,10 @@ npm install -g fis3-parser-html-replaceurl
 
 ## 版本
 `v0.0.1` 替换html中的静态url
+
 `v0.1.0` 将html中的注释文件删除(可自定义保留那些注释字眼)，可对html文件进行压缩
+
+`v0.2.0` 新增对js中关键字眼的替换
 
 ## 自定义函数名
 
@@ -19,7 +22,7 @@ fis.media('test')
     .match("*", {
         domain: "${domain_test}",
     })
-    .match('*.html', {
+    .match('{*.html,**/a.js}', {
       parser: fis.plugin('html-replaceurl', {
         newWords:{
           csdn_url:"http://blog.csdn.net",
@@ -37,6 +40,7 @@ fis.media('test')
 - `removeComments` 是否删除注释，默认false
 - `ignoreWords` 删除注释时，需要过滤的字眼，主要排除模板引擎自带的注释
 - `minifier` 是否压缩，默认false
+
 ```html
 <!DOCTYPE html>
 <html class="no-js" lang="en">

@@ -50,8 +50,9 @@ fis.match("*", {
       })
     })
     // js进行压缩，并使用hash值
-    .match("/js/*.js", {
+    .match(/\/js\/(\w+).js/, {
         useHash: true,
+        id:"$1",
         optimizer: fis.plugin('uglify-js', {
             mangle: {
               except: 'exports, module, require, define' //不需要混淆的关键字
@@ -157,3 +158,34 @@ fis.media('build')
     //     })
     //   ]
     // })
+
+//postpackager插件接受4个参数，
+//ret包含了所有项目资源以及资源表、依赖树，其中包括：
+//   ret.src: 所有项目文件对象
+//   ret.pkg: 所有项目打包生成的额外文件
+//   reg.map: 资源表结构化数据
+//其他参数暂时不用管
+var createFrameworkConfig = function(ret, conf, settings, opt){
+    //创建一个对象，存放处理后的配置项
+    var map = {};
+    //依赖树数据
+    map.deps = {};
+    //遍历所有项目文件
+    fis.util.map(ret.src, function(subpath, file){
+      // console.log(file);
+      console.log("/////////////////////////////////");
+      console.log(file.id);
+      console.log("????????????")
+      console.log(file.requires);
+      console.log("/////////////////////////////////");
+        //文件的依赖数据就在file对象的requires属性中，直接赋值即可
+        if(file.requires && file.requires.length){
+            map.deps[file.id] = file.requires;
+        }
+    });
+    console.log("*****************************");
+    console.log(map.deps);
+    console.log("*****************************");
+};
+//在modules.postpackager阶段处理依赖树，调用插件函数
+fis.config.set('modules.postpackager', [createFrameworkConfig]);
