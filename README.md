@@ -9,11 +9,12 @@ npm install -g fis3-parser-html-replaceurl
 ```
 
 ## 版本
-`v0.0.1` 替换html中的静态url
+
+`v0.2.0` 新增对js中关键字眼的替换
 
 `v0.1.0` 将html中的注释文件删除(可自定义保留那些注释字眼)，可对html文件进行压缩
 
-`v0.2.0` 新增对js中关键字眼的替换
+`v0.0.1` 替换html中的静态url
 
 ## 自定义函数名
 

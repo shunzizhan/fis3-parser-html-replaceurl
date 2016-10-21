@@ -1,6 +1,6 @@
 {
   "name": "fis3-parser-html-replaceurl",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "description": "replace html files static url",
   "main": "index.js",
   "scripts": {
